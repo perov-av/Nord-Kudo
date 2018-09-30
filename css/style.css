@@ -225,7 +225,6 @@ ul li.active a {
 .f_down {
 	min-width: 940px;
 	min-height: 280px;
-	/* padding: 30px; */
 	background-image: url(../img/footer_bg2.jpg);
 	background-color: #0f0e14;
 	background-repeat: no-repeat;
@@ -294,6 +293,9 @@ ul li.active a {
 	left: 47%;
 	width: 295px;
 }
+/* Конец стилей футера */
+
+/* Стили Карусели */
 
 #custom_carousel {
 	width: 942px;
@@ -308,3 +310,5 @@ div.carousel-caption h3, p {
 	background-color: rgb(49, 48, 48, 0.4);
 	color: #ece0e1
 }
+
+/* Конец стилей Карусели */
