@@ -1,0 +1,154 @@
+body {
+	background-color: #ccc;
+	padding: 0;
+	margin: 0;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 14px;
+	color: black;
+	line-height: 1.5;
+}
+
+/*Стили для Шапки*/
+
+#header {
+	background-image: url(../img/header_bg.jpg);
+	height: 450px;
+	padding-top: 50px;
+	min-width: 940px;
+}
+
+/*Обертка шапки*/
+
+.wrapper {
+	width: 940px;
+	margin: 0 auto;
+}
+
+/*Стили левого Дива с логотипом и надписью*/
+
+#logoHeader {
+	width: 170px;
+	text-align: center;
+	margin: auto;
+}
+
+#club {
+	text-align: center;
+	color: #ece0e1;
+	width: 200px;
+	font-size: 18px;
+	text-transform: uppercase;
+	margin: 28px auto;
+}
+
+.fontBlack {
+	font-size: 30px;
+	font-family: 'Black Ops One', cursive, Canyon-Stencil, Arial, Helvetica, sans-serif;
+}
+
+.fontArial {
+	font-size: 18px;
+	font-family: Arial, Helvetica, sans-serif;
+	margin-top: 15px;
+}
+
+.leftPart {
+	float: left;
+	padding: 10px;
+	height: 340px;
+	margin: auto;
+	width: 212px;
+}
+
+/*Конец стилей левого Дива с логотипом и надписью*/
+
+/*Стили центрального Дива в шапке с фотографией и слоганом*/
+
+.centerPart {
+	margin: 0 auto;
+	width: 450px;
+}
+
+.img {
+	text-align: center;
+}
+
+#slogan {
+	font-size: 38px;
+	font-family: 'Pangolin', cursive, a_SimplerBrk, Arial, Helvetica, sans-serif;
+	margin-top: 13px;
+	color: #ece0e1;
+	text-align: center;
+}
+
+/*Конец стилей центрального дива*/
+
+/*Стили правого дива с иконками и контактами*/
+
+.rightPart {
+	float: right;
+	padding: 10px;
+	height: 340px;
+	margin: auto;
+	width: 212px;
+}
+
+.rightPart div {
+	background-size: 40px 40px;
+	background-repeat: no-repeat;
+	height: 38px;
+	color: #ece0e1;
+	text-align: center;
+	line-height: 1.5;
+	padding-left: 45px;
+	padding-top: 3px;
+}
+
+#tel {
+	background-image: url(../img/tel.png);
+	font-size: 18px;
+}
+
+#mail {
+	background-image: url(../img/mail.png);
+	margin-top: 25px;
+	font-size: 16px;
+}
+
+#mail a {
+	text-decoration: none;
+	color: #ece0e1;
+}
+
+#mail a:hover {
+	border-bottom: 1px dotted #f70000;
+	color: #f70000;
+	font-size: 18px
+}
+
+#vk {
+	background-image: url(../img/vk.png);
+	margin-top: 25px;
+	font-size: 16px;
+}
+
+#vk a {
+	text-decoration: none;
+	color: #ece0e1;
+}
+
+#vk a:hover {
+	border-bottom: 1px dotted #f70000;
+	color: #f70000;
+	font-size: 18px
+}
+
+#adress {
+	background-image: url(../img/adress.png);
+	margin-top: 25px;
+	font-size: 16px;
+}
+
+/*Конец стилей правой части шапки*/
+
+/*Конец стилей Шапки сайта*/
