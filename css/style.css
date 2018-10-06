@@ -391,7 +391,6 @@ margin: 10px;
 
 .m_Section {
   padding: 40px;
-  min-height: 700px;
 }
 
 #big img {
@@ -408,7 +407,7 @@ h2 {
   background-image: url(../img/content_ab-kudo/bg_section.jpg);
   background-repeat: no-repeat;
   background-position: center;
-  
+  min-height: 700px;
 }
 
 .m_Wrap p {
