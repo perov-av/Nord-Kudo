@@ -180,6 +180,10 @@ nav {
 	text-align: center;
 }
 
+.n_wrap ul {
+	margin: 0;
+}
+
 .n_wrap ul li {
 	list-style-type: none;
 	display: inline-block;
@@ -299,16 +303,81 @@ ul li.active a {
 
 #custom_carousel {
 	width: 942px;
-	margin: 0 auto;
+	margin: 40px auto;
 	min-height: 500px;
 }
 div.item img {
 	margin: 0 auto;
 }
 
-div.carousel-caption h3, p {
-	background-color: rgb(49, 48, 48, 0.4);
+div.carousel-caption h3,
+div.carousel-caption p {
+	background-color: rgba(49, 48, 48, 0.4);
 	color: #ece0e1
 }
+.carousel-control.left,
+.carousel-control.right {
+  background-image: none;
+ }
+.carousel-control {
+  color: #f70000;
+}
+
 
 /* Конец стилей Карусели */
+
+/* Стили основного контента */
+
+.clear {
+  clear: both;
+}
+.content {
+  margin: 40px;
+  position: relative;
+}
+
+.m_Wrap {
+  max-width: 940px;
+  margin: 20px auto;
+}
+
+.m_Text {
+  width: 45%;
+  text-align: center;
+  float: left;
+}
+
+.m_Text h2 {
+  font-family: 'Black Ops One', cursive, Canyon-Stencil, Arial, Helvetica, sans-serif;
+  text-shadow: 1px 1px 2px black;
+  }
+
+  .m_Text p {
+    text-align: justify;
+    text-indent: 15px;
+    font-size: 1.2em;
+  }
+  em {
+    font-style: normal;
+  }
+
+  .m_Photo {
+    width: 50%;
+    float: right;
+    padding-top: 55px;
+  }
+
+  .photo img {
+    margin: 25px 10px;
+    box-shadow: 2px 2px 2px rgba(49, 48, 48, 0.5),    -2px 2px 2px rgba(49, 48, 48, 0.5);
+    border-radius:   5px;
+    -webkit-border-radius:   5px;
+    -moz-border-radius:   5px;
+    -ms-border-radius:   5px;
+    -o-border-radius:   5px;
+}
+  .photo div {
+width: 30%;
+float: left;
+margin: 10px;
+}
