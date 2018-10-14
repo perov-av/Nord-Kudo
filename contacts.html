@@ -30,6 +30,9 @@
 		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp"
 		 crossorigin="anonymous">
 
+		 <!-- Magnific Po-Pub -->
+		<link rel="stylesheet" type="text/css" href="css/magnific-popup.css">
+
 		<!-- Основной CSS -->
 		<link rel="stylesheet" type="text/css" href="css/style.css">
 		<!--Подключение иконки на вкоадке страницы сайта-->
@@ -92,7 +95,7 @@
 					<div class="img">
 						<img src="img/center_img.png" alt="Заставка">
 					</div>
-					<div>
+					<div class="img">
 						<img src="img/slogan.png" alt="Слоган">
 					</div>
 				</div>
@@ -131,7 +134,8 @@
 					<div class="text">
 						<h2 id="fanin">Фанин Юрий Валентинович</h2>
 						<h3>Черный пояс по КУДО (1 дан)</h3>
-						<h3>Основатель и главный тренер клуба «NORD-KUDO»</h3>
+						<h3>Телефон для связи:
+						+7 (911) 099-95-00</h3>
 						<p>Образование высшее: МГТУ им.Баумана. Проф.переподготовка: 
 							Академия постдипломного педагогического образования,теория и
 							методика обучения (физическая культура). </p>
@@ -153,7 +157,7 @@
 					<h1>Адреса и контакты клуба NORD-KUDO</h1>
 					<h5>Филиал на ул. Ушинского</h5>
 					<div class="map">
-						<iframe src="https://yandex.ru/map-widget/v1/-/CBB7qOvIDA" width="900" height="700" frameborder="1" allowfullscreen="true"></iframe>
+						<iframe src="https://yandex.ru/map-widget/v1/-/CBBWEQsI3B" width="900" height="700" frameborder="1" allowfullscreen="true"></iframe>
 					</div>
 					<address>
 						г. Санкт-Петербург, ул. Ушинского, д.10
@@ -174,6 +178,42 @@
 						Рассписание занятий зависит от возврастной категории спортстменов.<br>
 						Актуальное расписание уточняйте по телефону.
 					</address>
+				</div>
+			</section>
+			<section class="m_Section">
+				<div class="m_Wrap">
+					<h1>Готовы ответить на Ваши вопросы</h1>
+					<form class="form-horizontal" role="form" id="form">
+						<div class="form-group">
+							<label for="name" class="col-sm-2 control-label">Ваше имя</label>
+							<div class="col-sm-10">
+								<input name="name" type="text" class="form-control" id="name" placeholder="Введите Ваше имя" required>
+							</div>
+						</div>
+						<div class="form-group">
+							<label for="email" class="col-sm-2 control-label">Email</label>
+							<div class="col-sm-10">
+								<input name="email" type="email" class="form-control" id="email" placeholder="Введите Ваш Email" required>
+							</div>
+						</div>
+						<div class="form-group">
+							<label for="phone" class="col-sm-2 control-label">Телефон</label>
+							<div class="col-sm-10">
+								<input name="phone" type="number" class="form-control" id="phone" placeholder="Введите Ваш номер телефона" required>
+							</div>
+						</div>
+						<div class="form-group">
+							<label for="text" class="col-sm-2 control-label">Ваш вопрос</label>
+							<div class="col-sm-10">
+								<textarea id="text" name="text" placeholder="Задайте Ваш вопрос" type="text" class="form-control" rows="5" required></textarea>
+							</div>
+						</div>
+						<div class="form-group">
+							<div class="col-sm-offset-2 col-sm-10">
+								<button type="submit" class="btn btn-primary">Отправить</button>
+							</div>
+						</div>
+					</form>
 				</div>
 			</section>
 		</main>
@@ -242,6 +282,12 @@
 		<!-- Последняя компиляция и сжатый JavaScript -->
 		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
 		 crossorigin="anonymous"></script>
+
+		<!-- Magnific POPUB -->
+		<script src="js/jquery.magnific-popup.min.js"></script>
+		<!-- Основной JS -->
+		<script src="js/common.js"></script>
+
 	</body>
 
 </html>
