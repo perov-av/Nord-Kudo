@@ -360,6 +360,15 @@ body {
      width: 285px;
      margin: 25px 10px;
    }
+
+   .m_Photo a:hover {
+     opacity: 0.9;
+     transform: scale(1.1);
+     -webkit-transform: scale(1.1);
+     -moz-transform: scale(1.1);
+     -ms-transform: scale(1.1);
+     -o-transform: scale(1.1);
+}
    
    .m_Section {
 		padding: 40px;
@@ -412,6 +421,7 @@ body {
       float: left;
       width: 45%;
       margin: 0 30px 30px 0;
+      height: 550px;
    }
    .blockquote-reverse p {
       width: 50%;
@@ -502,3 +512,38 @@ body {
    }
 
    /* //Конец Стилей для Popup */
+
+   /* Стили для страницы Лучшие спортсмены */
+
+   .item_text {
+     float: right;
+     text-align: center;
+     width: 50%;
+   }
+
+   .sportmans {
+     text-transform: uppercase;
+     font-size: 1.9em;
+     margin-top: 160px;
+   }
+
+   .left-position {
+     min-height: 800px;
+     background-image: url(../img/content_best-sportmens/bg-best1.jpg);
+     background-repeat: no-repeat;
+     background-position: center;
+   }
+
+   .right-position {
+     min-height: 800px;
+     background-image: url(../img/content_best-sportmens/bg-best3.jpg);
+     background-repeat: no-repeat;
+     background-position: center;
+   }
+
+   .center-position {
+     min-height: 800px;
+     background-image: url(../img/content_best-sportmens/bg-best2.jpg);
+     background-repeat: no-repeat;
+     background-position: center;
+   }
