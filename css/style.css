@@ -1,549 +1,763 @@
 body {
-   background-color: #ffffff;
-   padding: 0;
-   margin: 0;
-   font-family: Arial, Helvetica, sans-serif;
-   font-size: 14px;
-   color: black;
-   line-height: 1.5;
+  background-color: #ffffff;
+  padding: 0;
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 14px;
+  color: black;
+  line-height: 1.5;
 }
 
 /*Стили для Шапки*/
 
-   header {
-      background-image: url(../img/header_bg.jpg);
-      background-color: #0f0e14;
-      background-repeat: no-repeat;
-      background-position: center;
-      background-size: cover;
-      min-height: 450px;
-      padding-top: 50px;
-      min-width: 940px;
-      color: #ece0e1;
-      padding-bottom: 1px;
-   }
-   /*Обертка шапки*/
-   .wrapper {
-      width: 940px;
-      margin: 0 auto;
-   }
-   /*Стили левого Дива с логотипом и надписью*/
-   #logoHeader {
-      width: 170px;
-      text-align: center;
-      margin: auto;
-   }
-   #club {
-      text-align: center;
-      color: #ece0e1;
-      width: 200px;
-      font-size: 18px;
-      text-transform: uppercase;
-      margin: 28px auto;
-   }
-   .fontBlack {
-      font-size: 30px;
-      font-family: 'Black Ops One', cursive, Canyon-Stencil, Arial, Helvetica, sans-serif;
-   }
-   .fontArial {
-      font-size: 18px;
-      font-family: Arial, Helvetica, sans-serif;
-      margin-top: 15px;
-   }
-   .leftPart {
-      float: left;
-      padding: 10px;
-      height: 340px;
-      margin: auto;
-      width: 212px;
-   }
-   /*Конец стилей левого Дива с логотипом и надписью*/
-   /*Стили центрального Дива в шапке с фотографией и слоганом*/
-   .centerPart {
-      margin: 0 auto;
-      width: 450px;
-   }
-   .img {
-		text-align: center;
-		margin-bottom: 30px;
-   }
-   /*Конец стилей центрального дива*/
-   /*Стили правого дива с иконками и контактами*/
-   .rightPart {
-      float: right;
-      padding: 10px;
-      height: 340px;
-      margin: auto;
-      width: 220px;
-   }
-   .rightPart div {
-      background-size: 40px 40px;
-      background-repeat: no-repeat;
-      height: 40px;
-      color: #ece0e1;
-      text-align: right;
-      line-height: 1.5;
-      padding-left: 45px;
-      padding-top: 3px;
-   }
-   #tel,
-   #mail,
-   #vk {
-      font-size: 16px;
-      margin-bottom: 10px;
-      min-height: 40px;
-      text-align: right;
-      background-repeat: no-repeat;
-      padding-top: 7px;
-   }
-   #tel {
-      background-image: url(../img/tel.png);
-   }
-   #mail {
-      background-image: url(../img/mail.png);
-   }
-   #mail a {
-      text-decoration: none;
-      color: #ece0e1;
-      transition: 0.5s ease-out;
-      -webkit-transition: 0.5s ease-out;
-      -moz-transition: 0.5s ease-out;
-      -ms-transition: 0.5s ease-out;
-      -o-transition: 0.5s ease-out;
-   }
-   #mail a:hover {
-      border-bottom: 1px dotted #f70000;
-      color: #f70000;
-   }
-   #vk {
-      background-image: url(../img/vk.png);
-   }
-   #vk a {
-      text-decoration: none;
-      color: #ece0e1;
-      transition: 0.5s ease-out;
-      -webkit-transition: 0.5s ease-out;
-      -moz-transition: 0.5s ease-out;
-      -ms-transition: 0.5s ease-out;
-      -o-transition: 0.5s ease-out;
-   }
-   #vk a:hover {
-      border-bottom: 1px dotted #f70000;
-      color: #f70000;
-   }
-   #adress {
-      background-image: url(../img/adress.png);
-      font-size: 16px;
-      background-repeat: no-repeat;
-      text-align: right;
-   }
-   /*Конец стилей правой части шапки*/
-   /*Конец стилей Шапки сайта*/
-   /* Стили Навигации */
-   nav {
-      background-color: #000000;
-      min-height: 60px;
-      background-image: url(../img/bg_nav.png);
-      background-repeat: repeat-x;
-      font-size: 18px;
-      text-align: center;
-   }
-   .n_wrap {
-      min-width: 940px;
-      margin: 0 auto;
-      text-align: center;
-   }
-   .n_wrap ul {
-      margin: 0;
-   }
-   .n_wrap ul li {
-      list-style-type: none;
-      display: inline-block;
-      margin: 15px;
-   }
-   .n_wrap ul li a {
-      color: #f70000;
-      margin: auto;
-      transition: 0.35s ease-out;
-      -webkit-transition: 0.35s ease-out;
-      -moz-transition: 0.35s ease-out;
-      -ms-transition: 0.35s ease-out;
-      -o-transition: 0.35s ease-out;
-   }
-   .n_wrap ul li a:hover {
-      color: #ece0e1;
-   }
-   .n_wrap ul li a:active {
-      border: 1px solid #f70000;
-      color: #ece0e1;
-   }
-   ul li.active a {
-      color: #ece0e1;
-   }
-   /* Конец Стилей навигации */
-   /* Стили футера */
-   .footerImg {
-      background-color: #000000;
-      min-height: 340px;
-      background-image: url(../img/footer_bg1.jpg);
-      background-repeat: no-repeat;
-      background-position: center;
-      background-origin: content-box;
-      margin-top: 30px;
-   }
-   .f_down {
-      min-width: 940px;
-      min-height: 280px;
-      background-image: url(../img/footer_bg2.jpg);
-      background-color: #0f0e14;
-      background-repeat: no-repeat;
-      background-position: center;
-      background-size: cover;
-   }
-   .f_downWrap {
-      width: 940px;
-      margin: 0 auto;
-      padding: 25px;
-   }
-   .f_logo {
-      width: 162px;
-      float: left;
-      margin-right: 25px;
-      margin-left: 15px;
-   }
-   .f_nav {
-      width: 210px;
-      float: left;
-      margin-top: 9px;
-      margin-right: 30px;
-   }
-   .f_nav ul li {
-      list-style-type: none;
-      font-size: 16px;
-   }
-   .f_nav ul li a {
-      color: #f70000;
-      margin: auto;
-      transition: 0.35s ease-out;
-      -webkit-transition: 0.35s ease-out;
-      -moz-transition: 0.35s ease-out;
-      -ms-transition: 0.35s ease-out;
-      -o-transition: 0.35s ease-out;
-   }
-   .f_nav ul li a:hover {
-      color: #ece0e1;
-   }
-   .f_contacts {
-      width: 200px;
-      float: left;
-      color: #ece0e1;
-      margin-right: 30px;
-      margin-top: 9px;
-   }
-   .f_adress {
-      width: 212px;
-      float: left;
-      float: left;
-      color: #ece0e1;
-      margin-top: 9px;
-   }
-   .myLogo {
-      position: relative;
-      bottom: 78px;
-      left: 47%;
-      width: 295px;
-   }
-   /* Конец стилей футера */
-   /* Стили Карусели */
-   #custom_carousel {
-      width: 942px;
-      margin: 60px auto;
-      min-height: 500px;
-   }
-   div.item img {
-      margin: 0 auto;
-   }
-   div.carousel-caption h3,
-   div.carousel-caption p {
-      background-color: rgba(49, 48, 48, 0.4);
-      color: #ece0e1
-   }
-   .carousel-control.left,
-   .carousel-control.right {
-      background-image: none;
-   }
-   .carousel-control {
-      color: #ffffff;
-   }
-   /* Конец стилей Карусели */
-   /* Стили основного контента */
-   #fon {
-     min-height: 100px;
-     background-image: url(../img/fon_section.png);
-     background-repeat: no-repeat;
-     background-position: center center;
-     background-attachment: fixed;
-   }
-   .clear {
-      clear: both;
-   }
-   .content {
-      margin: 40px;
-      position: relative;
-   }
-   .m_Wrap {
-      max-width: 940px;
-      margin: 20px auto;
-   }
-   .m_Text {
-      width: 100%;
-      text-align: center;
-   }
-
-   #big {
-      width: 100%;
-   }
-   h1 {
-      font-family: 'Black Ops One', Canyon-Stencil, Arial, Helvetica, sans-serif;
-      text-shadow: 1px 1px 2px black;
-      text-align: center;
-      margin: 40px auto;
-      font-size: 3.1em;
-   }
-
-    h1.come {
-    color: #296395;
-    font-weight: bold;
-    text-shadow: 6px 4px 2px rgba(3, 8, 58, .3);
-    margin-bottom: 70px;
-    margin-top: 60px;
-    transition: all 0.5s ease-out;
-    -webkit-transition: all 0.5s ease-out;
-    -moz-transition: all 0.5s ease-out;
-    -ms-transition: all 0.5s ease-out;
-    -o-transition: all 0.5s ease-out;
-}
-    
-    h1.come:hover {
-      color: #9c0606;
-    }
-
-   .m_Text p {
-      text-align: justify;
-      text-indent: 15px;
-      font-size: 1.2em;
-   }
-   em {
-      font-style: normal;
-   }
-   .m_Photo {
-      width: 100%;
-      margin: 10px auto;
-      text-align: center;
-   }
-   .m_Photo img {
-      margin: 25px 15px;
-		  box-shadow: 2px 2px 2px rgba(49, 48, 48, 0.5), -2px 2px 2px rgba(49, 48, 48, 0.5);
-      border-radius: 5px;
-      -webkit-border-radius: 5px;
-      -moz-border-radius: 5px;
-      -ms-border-radius: 5px;
-      -o-border-radius: 5px;
-   }
-
-   .m_Photo .itemPopup {
-     display: inline-block;
-   }
-
-   .m_Photo a {
-     display: inline-block;
-     width: 285px;
-     margin: 25px 10px;
-   }
-
-   .m_Photo a:hover {
-     opacity: 0.9;
-     transform: scale(1.1);
-     -webkit-transform: scale(1.1);
-     -moz-transform: scale(1.1);
-     -ms-transform: scale(1.1);
-     -o-transform: scale(1.1);
-}
-   
-   .m_Section {
-		padding: 40px;
-	}
-   #big img {
-      float: right;
-      margin: 5px 0 25px 35px;
-   }
-   h2 {
-      font-size: 1.7em;
-      font-weight: bold;
-      margin: 30px auto;
-   }
-   #bg {
-      background-image: url(../img/content_ab-kudo/bg_section.jpg);
-      background-repeat: no-repeat;
-      background-position: center;
-      min-height: 700px;
-   }
-   .m_Wrap p {
-      text-align: justify;
-      text-indent: 15px;
-      font-size: 1.3em;
-   }
-   .video {
-      width: 45%;
-      float: left;
-      margin: 40px 20px;
-   }
-   .video iframe {
-      width: 100%;
-      height: 290px;
-   }
-   .item_Set {
-      width: 23%;
-      float: left;
-      margin: 28px 6px;
-   }
-   .img {
-      width: 100%;
-   }
-   h4 {
-      text-align: center;
-   }
-   .img_Wrap {
-      width: 100%;
-      text-align: center;
-   }
-   .Photo {
-      float: left;
-      width: 45%;
-      margin: 0 30px 30px 0;
-      height: 550px;
-   }
-   .blockquote-reverse p {
-      width: 50%;
-      font-size: 0.8em;
-      text-align: right;
-      float: right;
-   }
-   #fanin {
-      text-transform: uppercase;
-      text-align: center;
-      margin-bottom: 30px;
-   }
-   h3 {
-      font-size: 1.5em;
-      font-style: italic;
-      font-weight: bold;
-   }
-   h5 {
-      text-align: center;
-      text-decoration: underline;
-      font-size: 1.5em;
-   }
-   .map {
-      text-align: center;
-      margin-top: 40px;
-   }
-   address {
-      text-align: right;
-      margin: 30px 20px 60px 0;
-   }
-   address span {
-      font-weight: bold;
-   }
-   /* Стили для Формы */
-   form {
-     margin-top: 60px;
-   }
-   /* Стили для Popup */
-   /* overlay at start */
-   .mfp-fade.mfp-bg {
-     opacity: 0;
-
-     transition: all 0.5s ease-out;
-     -webkit-transition: all 0.5s ease-out;
-     -moz-transition: all 0.5s ease-out;
-     -ms-transition: all 0.5s ease-out;
-     -o-transition: all 0.5s ease-out;
-   }
-
-   /* overlay animate in */
-   .mfp-fade.mfp-bg.mfp-ready {
-     opacity: 0.8;
-   }
-
-   /* overlay animate out */
-   .mfp-fade.mfp-bg.mfp-removing {
-     opacity: 0;
-   }
-
-   /* content at start */
-   .mfp-fade.mfp-wrap .mfp-content {
-     opacity: 0;
-     transform: scale(0) rotate(90deg);
-     -webkit-transform: scale(0) rotate(90deg);
-     -moz-transform: scale(0) rotate(90deg);
-     -ms-transform: scale(0) rotate(90deg);
-     -o-transform: scale(0) rotate(90deg);
-     transition: all 0.5s ease-out;
-     -webkit-transition: all 0.5s ease-out;
-     -moz-transition: all 0.5s ease-out;
-     -ms-transition: all 0.5s ease-out;
-     -o-transition: all 0.5s ease-out;
+header {
+  background-image: url(../img/header_bg.jpg);
+  background-color: #0f0e14;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  min-height: 450px;
+  padding-top: 50px;
+  min-width: 940px;
+  color: #ece0e1;
+  padding-bottom: 1px;
 }
 
-   /* content animate it */
-   .mfp-fade.mfp-wrap.mfp-ready .mfp-content {
-     opacity: 1;
-     transform: scale(1) rotate(0deg);
-     -webkit-transform: scale(1) rotate(0deg);
-     -moz-transform: scale(1) rotate(0deg);
-     -ms-transform: scale(1) rotate(0deg);
-     -o-transform: scale(1) rotate(0deg);
+/*Обертка шапки*/
+
+.wrapper {
+  width: 940px;
+  margin: 0 auto;
 }
 
-   /* content animate out */
-   .mfp-fade.mfp-wrap.mfp-removing .mfp-content {
-     opacity: 0;
-   }
+/*Стили левого Дива с логотипом и надписью*/
 
-   /* //Конец Стилей для Popup */
+#logoHeader {
+  width: 170px;
+  text-align: center;
+  margin: auto;
+}
 
-   /* Стили для страницы Лучшие спортсмены */
+#club {
+  text-align: center;
+  color: #ece0e1;
+  width: 200px;
+  font-size: 18px;
+  text-transform: uppercase;
+  margin: 28px auto;
+}
 
-   .item_text {
-     float: right;
-     text-align: center;
-     width: 50%;
-   }
+.fontBlack {
+  font-size: 30px;
+  font-family: 'Black Ops One', cursive, Canyon-Stencil, Arial, Helvetica, sans-serif;
+}
 
-   .sportmans {
-     text-transform: uppercase;
-     font-size: 1.9em;
-     margin-top: 160px;
-   }
+.fontArial {
+  font-size: 18px;
+  font-family: Arial, Helvetica, sans-serif;
+  margin-top: 15px;
+}
 
-   .left-position {
-     min-height: 800px;
-     background-image: url(../img/content_best-sportmens/bg-best1.jpg);
-     background-repeat: no-repeat;
-     background-position: center;
-   }
+.leftPart {
+  float: left;
+  padding: 10px;
+  height: 340px;
+  margin: auto;
+  width: 212px;
+}
 
-   .right-position {
-     min-height: 800px;
-     background-image: url(../img/content_best-sportmens/bg-best3.jpg);
-     background-repeat: no-repeat;
-     background-position: center;
-   }
+/*Конец стилей левого Дива с логотипом и надписью*/
 
-   .center-position {
-     min-height: 800px;
-     background-image: url(../img/content_best-sportmens/bg-best2.jpg);
-     background-repeat: no-repeat;
-     background-position: center;
-   }
+/*Стили центрального Дива в шапке с фотографией и слоганом*/
+
+.centerPart {
+  margin: 0 auto;
+  width: 450px;
+}
+
+.img {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+/*Конец стилей центрального дива*/
+
+/*Стили правого дива с иконками и контактами*/
+
+.rightPart {
+  float: right;
+  padding: 10px;
+  height: 340px;
+  margin: auto;
+  width: 220px;
+}
+
+.rightPart div {
+  background-size: 40px 40px;
+  background-repeat: no-repeat;
+  height: 40px;
+  color: #ece0e1;
+  text-align: right;
+  line-height: 1.5;
+  padding-left: 45px;
+  padding-top: 3px;
+}
+
+#tel,
+#mail,
+#vk {
+  font-size: 16px;
+  margin-bottom: 10px;
+  min-height: 40px;
+  text-align: right;
+  background-repeat: no-repeat;
+  padding-top: 7px;
+}
+
+#tel {
+  background-image: url(../img/tel.png);
+}
+
+#mail {
+  background-image: url(../img/mail.png);
+}
+
+#mail a {
+  text-decoration: none;
+  color: #ece0e1;
+  transition: 0.5s ease-out;
+  -webkit-transition: 0.5s ease-out;
+  -moz-transition: 0.5s ease-out;
+  -ms-transition: 0.5s ease-out;
+  -o-transition: 0.5s ease-out;
+}
+
+#mail a:hover {
+  border-bottom: 1px dotted #f70000;
+  color: #f70000;
+}
+
+#vk {
+  background-image: url(../img/vk.png);
+}
+
+#vk a {
+  text-decoration: none;
+  color: #ece0e1;
+  transition: 0.5s ease-out;
+  -webkit-transition: 0.5s ease-out;
+  -moz-transition: 0.5s ease-out;
+  -ms-transition: 0.5s ease-out;
+  -o-transition: 0.5s ease-out;
+}
+
+#vk a:hover {
+  border-bottom: 1px dotted #f70000;
+  color: #f70000;
+}
+
+#adress {
+  background-image: url(../img/adress.png);
+  font-size: 16px;
+  background-repeat: no-repeat;
+  text-align: right;
+}
+
+/*Конец стилей правой части шапки*/
+
+/*Конец стилей Шапки сайта*/
+
+/* Стили Навигации */
+
+nav {
+  background-color: #000000;
+  min-height: 60px;
+  background-image: url(../img/bg_nav.png);
+  background-repeat: repeat-x;
+  font-size: 18px;
+  text-align: center;
+}
+
+.n_wrap {
+  min-width: 940px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.n_wrap ul {
+  margin: 0;
+}
+
+.n_wrap ul li {
+  list-style-type: none;
+  display: inline-block;
+  margin: 15px;
+}
+
+.n_wrap ul li a {
+  color: #f70000;
+  margin: auto;
+  transition: 0.35s ease-out;
+  -webkit-transition: 0.35s ease-out;
+  -moz-transition: 0.35s ease-out;
+  -ms-transition: 0.35s ease-out;
+  -o-transition: 0.35s ease-out;
+}
+
+.n_wrap ul li a:hover {
+  color: #ece0e1;
+}
+
+.n_wrap ul li a:active {
+  border: 1px solid #f70000;
+  color: #ece0e1;
+}
+
+ul li.active a {
+  color: #ece0e1;
+}
+
+/* Конец Стилей навигации */
+
+/* Стили футера */
+
+.footerImg {
+  background-color: #000000;
+  min-height: 340px;
+  background-image: url(../img/footer_bg1.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-origin: content-box;
+  margin-top: 30px;
+}
+
+.f_down {
+  min-width: 940px;
+  min-height: 280px;
+  background-image: url(../img/footer_bg2.jpg);
+  background-color: #0f0e14;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.f_downWrap {
+  width: 940px;
+  margin: 0 auto;
+  padding: 25px;
+}
+
+.f_logo {
+  width: 162px;
+  float: left;
+  margin-right: 25px;
+  margin-left: 15px;
+}
+
+.f_nav {
+  width: 210px;
+  float: left;
+  margin-top: 9px;
+  margin-right: 30px;
+}
+
+.f_nav ul li {
+  list-style-type: none;
+  font-size: 16px;
+}
+
+.f_nav ul li a {
+  color: #f70000;
+  margin: auto;
+  transition: 0.35s ease-out;
+  -webkit-transition: 0.35s ease-out;
+  -moz-transition: 0.35s ease-out;
+  -ms-transition: 0.35s ease-out;
+  -o-transition: 0.35s ease-out;
+}
+
+.f_nav ul li a:hover {
+  color: #ece0e1;
+}
+
+.f_contacts {
+  width: 200px;
+  float: left;
+  color: #ece0e1;
+  margin-right: 30px;
+  margin-top: 9px;
+}
+
+.f_adress {
+  width: 212px;
+  float: left;
+  float: left;
+  color: #ece0e1;
+  margin-top: 9px;
+}
+
+.myLogo {
+  position: relative;
+  bottom: 78px;
+  left: 47%;
+  width: 295px;
+}
+
+/* Конец стилей футера */
+
+/* Стили Карусели */
+
+#custom_carousel {
+  width: 942px;
+  margin: 60px auto;
+  min-height: 500px;
+}
+
+div.item img {
+  margin: 0 auto;
+}
+
+div.carousel-caption h3,
+div.carousel-caption p {
+  background-color: rgba(49, 48, 48, 0.4);
+  color: #ece0e1
+}
+
+.carousel-control.left,
+.carousel-control.right {
+  background-image: none;
+}
+
+.carousel-control {
+  color: #ffffff;
+}
+
+/* Конец стилей Карусели */
+
+/* Стили основного контента */
+
+#fon {
+  min-height: 100px;
+  background-image: url(../img/fon_section.png);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-attachment: fixed;
+}
+
+.clear {
+  clear: both;
+}
+
+.content {
+  margin: 40px;
+  position: relative;
+}
+
+.m_Wrap {
+  max-width: 940px;
+  margin: 20px auto;
+}
+
+.m_Text {
+  width: 100%;
+  text-align: center;
+}
+
+#big {
+  width: 100%;
+}
+
+h1 {
+  font-family: 'Black Ops One', Canyon-Stencil, Arial, Helvetica, sans-serif;
+  text-shadow: 1px 1px 2px black;
+  text-align: center;
+  margin: 40px auto;
+  font-size: 3.1em;
+}
+
+h1.come {
+  color: #296395;
+  font-weight: bold;
+  text-shadow: 6px 4px 2px rgba(3, 8, 58, .3);
+  margin-bottom: 70px;
+  margin-top: 60px;
+  transition: all 0.5s ease-out;
+  -webkit-transition: all 0.5s ease-out;
+  -moz-transition: all 0.5s ease-out;
+  -ms-transition: all 0.5s ease-out;
+  -o-transition: all 0.5s ease-out;
+}
+
+h1.come:hover {
+  color: #9c0606;
+}
+
+.m_Text p {
+  text-align: justify;
+  text-indent: 15px;
+  font-size: 1.2em;
+}
+
+em {
+  font-style: normal;
+}
+
+.m_Photo {
+  width: 100%;
+  margin: 10px auto;
+  text-align: center;
+}
+
+.m_Photo img {
+  margin: 25px 15px;
+  box-shadow: 2px 2px 2px rgba(49, 48, 48, 0.5), -2px 2px 2px rgba(49, 48, 48, 0.5);
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+}
+
+.m_Photo .itemPopup {
+  display: inline-block;
+}
+
+.m_Photo a {
+  display: inline-block;
+  width: 285px;
+  margin: 25px 10px;
+}
+
+.m_Photo a:hover {
+  opacity: 0.9;
+  transform: scale(1.1);
+  -webkit-transform: scale(1.1);
+  -moz-transform: scale(1.1);
+  -ms-transform: scale(1.1);
+  -o-transform: scale(1.1);
+}
+
+.m_Section {
+  padding: 40px;
+}
+
+#big img {
+  float: right;
+  margin: 5px 0 25px 35px;
+}
+
+h2 {
+  font-size: 1.7em;
+  font-weight: bold;
+  margin: 30px auto;
+}
+
+#bg {
+  background-image: url(../img/content_ab-kudo/bg_section.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  min-height: 700px;
+}
+
+.m_Wrap p {
+  text-align: justify;
+  text-indent: 15px;
+  font-size: 1.3em;
+}
+
+.video {
+  width: 45%;
+  float: left;
+  margin: 40px 20px;
+}
+
+.video iframe {
+  width: 100%;
+  height: 290px;
+}
+
+.item_Set {
+  width: 23%;
+  float: left;
+  margin: 28px 6px;
+}
+
+.img {
+  width: 100%;
+}
+
+h4 {
+  text-align: center;
+}
+
+.img_Wrap {
+  width: 100%;
+  text-align: center;
+}
+
+.Photo {
+  float: left;
+  width: 45%;
+  margin: 0 30px 30px 0;
+  height: 550px;
+}
+
+.blockquote-reverse p {
+  width: 50%;
+  font-size: 0.8em;
+  text-align: right;
+  float: right;
+}
+
+#fanin {
+  text-transform: uppercase;
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+h3 {
+  font-size: 1.5em;
+  font-style: italic;
+  font-weight: bold;
+}
+
+h5 {
+  text-align: center;
+  text-decoration: underline;
+  font-size: 1.5em;
+}
+
+.map {
+  text-align: center;
+  margin-top: 40px;
+}
+
+address {
+  text-align: right;
+  margin: 30px 20px 60px 0;
+}
+
+address span {
+  font-weight: bold;
+}
+
+/* Стили для Формы */
+
+form {
+  margin-top: 60px;
+}
+
+/* Стили для Popup */
+
+/* overlay at start */
+
+.mfp-fade.mfp-bg {
+  opacity: 0;
+  transition: all 0.5s ease-out;
+  -webkit-transition: all 0.5s ease-out;
+  -moz-transition: all 0.5s ease-out;
+  -ms-transition: all 0.5s ease-out;
+  -o-transition: all 0.5s ease-out;
+}
+
+/* overlay animate in */
+
+.mfp-fade.mfp-bg.mfp-ready {
+  opacity: 0.8;
+}
+
+/* overlay animate out */
+
+.mfp-fade.mfp-bg.mfp-removing {
+  opacity: 0;
+}
+
+/* content at start */
+
+.mfp-fade.mfp-wrap .mfp-content {
+  opacity: 0;
+  transform: scale(0) rotate(90deg);
+  -webkit-transform: scale(0) rotate(90deg);
+  -moz-transform: scale(0) rotate(90deg);
+  -ms-transform: scale(0) rotate(90deg);
+  -o-transform: scale(0) rotate(90deg);
+  transition: all 0.5s ease-out;
+  -webkit-transition: all 0.5s ease-out;
+  -moz-transition: all 0.5s ease-out;
+  -ms-transition: all 0.5s ease-out;
+  -o-transition: all 0.5s ease-out;
+}
+
+/* content animate it */
+
+.mfp-fade.mfp-wrap.mfp-ready .mfp-content {
+  opacity: 1;
+  transform: scale(1) rotate(0deg);
+  -webkit-transform: scale(1) rotate(0deg);
+  -moz-transform: scale(1) rotate(0deg);
+  -ms-transform: scale(1) rotate(0deg);
+  -o-transform: scale(1) rotate(0deg);
+}
+
+/* content animate out */
+
+.mfp-fade.mfp-wrap.mfp-removing .mfp-content {
+  opacity: 0;
+}
+
+/* //Конец Стилей для Popup */
+
+/* Стили для страницы Лучшие спортсмены */
+
+.item_text {
+  float: right;
+  text-align: center;
+  width: 50%;
+}
+
+.sportmans {
+  text-transform: uppercase;
+  font-size: 1.9em;
+  margin-top: 160px;
+}
+
+.left-position {
+  min-height: 800px;
+  background-image: url(../img/content_best-sportmens/bg-best1.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.right-position {
+  min-height: 800px;
+  background-image: url(../img/content_best-sportmens/bg-best3.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.center-position {
+  min-height: 800px;
+  background-image: url(../img/content_best-sportmens/bg-best2.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+/*Конец стилей для страницы Лучшие спортсмены */
+
+/* Стили для фотогалереи */
+
+/* Стили для bg-video */
+
+.fullscreen-bg {
+  overflow: hidden;
+  z-index: -100;
+  position: relative;
+  height: 100%;
+  width: 100%;
+  padding-top: 50%;
+}
+
+.fullscreen-bg__video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+}
+
+.overlay {
+  background: rgba(0, 0, 0, 0.6);
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 4;
+}
+
+.overlay h1 {
+  text-align: center;
+  color: #fff;
+  font-size: 80px;
+  margin-top: 7%;
+}
+
+/* ---------------------------------------------- /*
+ * Mouse animate icon
+/* ---------------------------------------------- */
+
+.overlay .mouse-icon {
+  border: 3px solid #fff;
+  border-radius: 16px;
+  height: 40px;
+  width: 24px;
+  display: block;
+  z-index: 10;
+  opacity: 0.9;
+  position: absolute;
+  bottom: 45px;
+  left: 50%;
+  cursor: pointer;
+}
+
+.overlay .mouse-icon .wheel {
+  -webkit-animation-name: drop;
+  -webkit-animation-duration: 1s;
+  -webkit-animation-timing-function: linear;
+  -webkit-animation-delay: 0s;
+  -webkit-animation-iteration-count: infinite;
+  -webkit-animation-play-state: running;
+  -webkit-animation-name: drop;
+  animation-name: drop;
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+  -webkit-animation-timing-function: linear;
+  animation-timing-function: linear;
+  -webkit-animation-delay: 0s;
+  animation-delay: 0s;
+  -webkit-animation-iteration-count: infinite;
+  animation-iteration-count: infinite;
+  -webkit-animation-play-state: running;
+  animation-play-state: running;
+}
+
+.overlay .mouse-icon .wheel {
+  position: relative;
+  border-radius: 10px;
+  background: #fff;
+  width: 2px;
+  height: 6px;
+  top: 4px;
+  margin-left: auto;
+  margin-right: auto;
+  cursor: pointer;
+}
+
+@-webkit-keyframes drop {
+  0% {
+    top: 5px;
+    opacity: 0;
+  }
+  30% {
+    top: 10px;
+    opacity: 1;
+  }
+  100% {
+    top: 25px;
+    opacity: 0;
+  }
+}
+
+@keyframes drop {
+  0% {
+    top: 5px;
+    opacity: 0;
+  }
+  30% {
+    top: 10px;
+    opacity: 1;
+  }
+  100% {
+    top: 25px;
+    opacity: 0;
+  }
+}
