@@ -6,6 +6,7 @@ body {
   font-size: 14px;
   color: black;
   line-height: 1.5;
+  overflow-x: hidden;
 }
 
 /*Стили для Шапки*/
@@ -599,6 +600,33 @@ form {
   -o-transform: scale(1) rotate(0deg);
 }
 
+/* content at start */
+
+.mfp-fade-gallary.mfp-wrap .mfp-content {
+  opacity: 0;
+  transform: scale(0);
+  -webkit-transform: scale(0);
+  -moz-transform: scale(0);
+  -ms-transform: scale(0);
+  -o-transform: scale(0);
+  transition: all 0.5s ease-out;
+  -webkit-transition: all 0.5s ease-out;
+  -moz-transition: all 0.5s ease-out;
+  -ms-transition: all 0.5s ease-out;
+  -o-transition: all 0.5s ease-out;
+}
+
+/* content animate it */
+
+.mfp-fade-gallary.mfp-wrap.mfp-ready .mfp-content {
+  opacity: 1;
+  transform: scale(1);
+  -webkit-transform: scale(1);
+  -moz-transform: scale(1);
+  -ms-transform: scale(1);
+  -o-transform: scale(1);
+}
+
 /* content animate out */
 
 .mfp-fade.mfp-wrap.mfp-removing .mfp-content {
@@ -677,8 +705,12 @@ form {
 .overlay h1 {
   text-align: center;
   color: #fff;
-  font-size: 80px;
-  margin-top: 7%;
+  font-size: 70px;
+  margin-top: 15%;
+}
+
+.overlay h1.anim-right {
+  margin-top: 0;
 }
 
 /* ---------------------------------------------- /*
@@ -691,12 +723,12 @@ form {
   height: 40px;
   width: 24px;
   display: block;
-  z-index: 10;
+  z-index: 100;
   opacity: 0.9;
   position: absolute;
   bottom: 45px;
   left: 50%;
-  cursor: pointer;
+  
 }
 
 .overlay .mouse-icon .wheel {
@@ -729,7 +761,7 @@ form {
   top: 4px;
   margin-left: auto;
   margin-right: auto;
-  cursor: pointer;
+ 
 }
 
 @-webkit-keyframes drop {
@@ -761,3 +793,32 @@ form {
     opacity: 0;
   }
 }
+
+/* ---------------------------------------------- /*
+ * //Mouse animate icon
+/* ---------------------------------------------- */
+
+/* ---------------------------------------------- /*
+ * Gallery
+/* ---------------------------------------------- */
+.home-gallery-wrap a {
+  display: none;
+}
+
+.home-gallery-wrap a:first-child {
+  display: inline-block;
+}
+
+.img-wrap {
+  height: 350px;
+  overflow: hidden;
+  display: block;
+}
+
+/* ---------------------------------------------- /*
+ * ///Gallery
+/* ---------------------------------------------- */
+
+
+
+
